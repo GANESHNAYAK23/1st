@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Dancing+Script:wght@500&family=Pacifico&family=Teko:wght@300&display=swap');
+
+
+body{
+    font-family: 'Caveat', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Teko', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:95%;
+    height: 100vh;
+}
+.hexcolor{
+
+    text-align: center;
+
+}
+.hexcolor h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: changecolor 5s infinite alternate;
+}
+.hexcolor h2{ 
+    font-size: 2rem;
+    margin-top:15% ;
+}
+
+@keyframes changecolor{
+    0%{
+        color:indigo;
+    }
+    20%{
+        color:blue;
+    }
+    40%{
+        color:green;
+    }
+    60%{
+        color:yellow;
+    }
+    80%{
+        color:orange;
+    }
+    100%{
+        color:red;
+    }
+}
+    
+
+@media(max-width:480px){
+.hexcolor h1{
+    font-size: 1.5rem;
+}
+.hexcolor h2{
+    font-size: 1.5rem;
+}
+}
